@@ -1,7 +1,8 @@
 {
   "name": "react-library-template",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "author": "Origami ONOUE <onoueorigami@gmail.com>",
   "license": "MIT",
   "devDependencies": {
@@ -45,5 +46,8 @@
   "peerDependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
+  },
+  "dependencies": {
+    "eslint-plugin-react": "^7.18.3"
   }
 }
