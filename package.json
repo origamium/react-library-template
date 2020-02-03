@@ -6,7 +6,10 @@
   "author": "Origami ONOUE <onoueorigami@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "NODE_ENV=production webpack"
+    "typecheck": "tsc",
+    "typecheck:watch": "tsc --watch --noEmit",
+    "bundle": "webpack",
+    "build": "NODE_ENV=production run-p -l -n -c bundle typecheck"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
