@@ -1,0 +1,12 @@
+{
+  "semi": true,
+  "tabWidth": 4,
+  "useTabs": false,
+  "printWidth": 92,
+  "overrides": [{
+    "files": ["*.json", "*.sh"],
+    "options": {
+      "tabWidth": 2
+    }
+  },
+}
