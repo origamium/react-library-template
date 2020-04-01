@@ -6,12 +6,17 @@
   "author": "Origami ONOUE <onoueorigami@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "test": "jest --config=jest/test/jest.config.js",
+    "test:watch": "yarn test --watch",
+    "test:coverage": "yarn test --coverage",
+    "test:visual": "jest --config=jest/integration/jest.config.js",
+    "test:visual-integration": "start-server-and-test storybook http-get://localhost:9009 jest:visual",
     "typecheck": "tsc",
     "typecheck:watch": "tsc --watch",
-    "bundle": "webpack",
+    "build": "webpack",
     "packing": "NODE_ENV=production run-p -l -n -c bundle typecheck",
     "storybook": "start-storybook -p 6006",
-    "build": "build-storybook -c .storybook -o public"
+    "build-storybook": "build-storybook -c .storybook -o public"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -44,6 +49,7 @@
     "css-loader": "^3.4.2",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-jest": "^23.8.2",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^3.0.0",
