@@ -11,9 +11,8 @@ const useHelloWorld = () => {
     return str;
 };
 
-const App: React.FC = () => {
+export const App: React.FC = () => {
     const str = useHelloWorld();
     return <div>{str}</div>;
 };
 
-export default App;

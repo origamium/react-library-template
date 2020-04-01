@@ -63,5 +63,5 @@
     /* Advanced Options */
     "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
   },
-  "exclude": ["node_modules","dist" , "**/*.spec.ts", "**/*.spec.tsx", "**/*.test.ts", "**/*.test.tsx", "**/*.stories.tsx"]
+  "exclude": ["node_modules","dist" , "**/*.spec.ts", "**/*.spec.tsx", "**/*.test.ts"]
 }
