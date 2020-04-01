@@ -47,7 +47,15 @@ module.exports = {
             }
         },
         {
-            files: ["**/__tests__/**", "**/*.test.tsx", "**/*.test.ts"],
+            files: [
+                "**/__tests__/**",
+                "**/*.test.tsx",
+                "**/*.spec.tsx",
+                "**/*.test.ts",
+                "**/*.spec.ts",
+                "**/*.test.visual.tsx",
+                "**/*.spec.visual.tsx"],
+            plugins: ["jest"],
             env: {
                 jest: true
             },
