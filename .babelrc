@@ -15,5 +15,17 @@
     "@babel/plugin-proposal-object-rest-spread",
     "@babel/plugin-syntax-dynamic-import",
     "@babel/plugin-proposal-class-properties"
-  ]
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        ["react-remove-properties", {"properties": ["data-testid"]}]
+      ]
+    },
+    "test": {
+      "presets": [
+        ["@babel/preset-env", { "targets":  { "node":  "current" }}]
+      ]
+    }
+  }
 }
