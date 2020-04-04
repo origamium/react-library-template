@@ -1,18 +1,7 @@
-import React, { useEffect, useState } from "react";
-
-const useHelloWorld = () => {
-    const [str, setStr] = useState("work in progress...");
-    useEffect(() => {
-        setTimeout(() => {
-            setStr("hello world!");
-        }, 4000);
-    });
-
-    return str;
-};
+import React from "react";
+import { useHelloWorld } from "./useHelloWorld";
 
 export const App: React.FC = () => {
     const str = useHelloWorld();
-    return <div>{str}</div>;
+    return <div data-testid="main">{str}</div>;
 };
-
