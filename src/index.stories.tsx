@@ -1,5 +1,9 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 import { App } from "./index";
 
-storiesOf("test", module).add("index", () => <App />);
+export default {
+    title: "App",
+    component: App
+};
+
+export const Basic = () => <App />;
