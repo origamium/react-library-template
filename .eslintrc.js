@@ -53,8 +53,8 @@ module.exports = {
                 "**/*.spec.tsx",
                 "**/*.test.ts",
                 "**/*.spec.ts",
-                "**/*.test.visual.tsx",
-                "**/*.spec.visual.tsx"],
+                "**/*.test.visual.ts",
+                "**/*.spec.visual.ts"],
             plugins: ["jest"],
             env: {
                 jest: true
