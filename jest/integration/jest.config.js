@@ -1,5 +1,6 @@
 module.exports = {
     preset: "jest-puppeteer",
+    rootDir: "../../",
     roots: ["<rootDir>/src"],
     testRegex: "./*\\.(test|spec).visual\\.tsx?$",
     transform: {
@@ -11,6 +12,6 @@ module.exports = {
             "<rootDir>/jest/fileMock.js",
         "\\.(css|less)$": "<rootDir>/jest/styleMock.js"
     },
-    setupFilesAfterEnv: ["./jest/setupTests.js"],
+    setupFilesAfterEnv: ["./jest/integration/setupTests.js"],
     moduleFileExtensions: ["js", "ts", "tsx", "json"]
 };
