@@ -7,6 +7,9 @@ module.exports = {
         path: `${__dirname}/dist`,
         filename: "bundle.js"
     },
+    resolve: {
+        extensions: [".js", ".jsx", ".ts", ".tsx"]
+    },
     module: {
         rules: [{ test: /\.tsx?$/, use: ["babel-loader"], exclude: [/node_modules/] }]
     },
