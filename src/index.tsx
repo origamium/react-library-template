@@ -1,7 +1,5 @@
 import React from "react";
-import { useHelloWorld } from "./useHelloWorld";
+import ReactDOM from "react-dom";
+import { App } from "./App";
 
-export const App: React.FC = () => {
-    const str = useHelloWorld();
-    return <div data-testid="main">{str}</div>;
-};
+ReactDOM.render(<App />, document.getElementById("root"));

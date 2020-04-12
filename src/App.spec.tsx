@@ -1,7 +1,7 @@
 import React from "react";
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
-import { App } from "./index";
+import { App } from "./App";
 import { act } from "react-dom/test-utils";
 
 describe("App test", () => {
