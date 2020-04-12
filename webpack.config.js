@@ -24,6 +24,9 @@ module.exports = (_, { mode = "development" }) => {
         resolve: {
             extensions: [".js", ".jsx", ".ts", ".tsx"],
         },
+        performance: {
+            hints: "warning",
+        },
         module: {
             rules: [
                 { test: /\.tsx?$/, use: ["babel-loader"], exclude: [/node_modules/] },
@@ -81,7 +84,7 @@ module.exports = (_, { mode = "development" }) => {
     };
 
     if (mode === "development") {
-        config.devtool = "source-map";
+        config.devtool = "inline-source-map";
 
         config.output = {
             path: path.resolve(__dirname, "dist"),
