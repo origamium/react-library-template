@@ -14,7 +14,7 @@ module.exports = (_, { mode = "development" }) => {
             index: "./src/index.tsx",
         },
         output: {
-            path: path.resolve(__dirname, "dist"),
+            path: path.resolve(__dirname, "build"),
             filename: "[name].[hash].js",
             chunkFilename: "static/js/[name].[hash].chunk.js",
             libraryTarget: "umd",
@@ -87,12 +87,12 @@ module.exports = (_, { mode = "development" }) => {
         config.devtool = "inline-source-map";
 
         config.output = {
-            path: path.resolve(__dirname, "dist"),
+            path: path.resolve(__dirname, "build"),
             filename: "[name].js",
         };
 
         config.devServer = {
-            contentBase: path.resolve(__dirname, "dist"),
+            contentBase: path.resolve(__dirname, "build"),
         };
 
         config.module.rules.push({
